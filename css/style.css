@@ -1,0 +1,90 @@
+
+/*
+Responsive Microplate v1.0
+
+http://github.com/omphalosskeptic/microplate
+
+Released into the public domain by @omphalosskeptic (http://github.com/omphalosskeptic) — remove this attribution if it annoys you.
+
+*/
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size:100%;
+}
+
+body {
+  font-size:21px;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 960px;
+}
+
+a {
+  text-decoration: none;
+  color:#000;
+  border-bottom: 1px dotted gray;
+}
+
+a:hover, a:active {
+  border-bottom: 1px solid gray;
+}
+
+input, button, textarea {
+  padding: 10px;
+  border: 1px solid gray;
+  box-shadow: none;
+}
+
+input:focus, input:active, button:focus, button:active {
+  border: 1px solid orange;
+  box-shadow: none;
+}
+
+/* ============= HELPERS ================= */
+.inline {
+  display: inline;
+}
+
+.m0a {
+  margin: 0 auto;
+}
+
+.hcenter {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.center-text {
+  text-align:center;
+}
+
+.sc {
+  -moz-font-feature-settings: "smcp=1";
+  -ms-font-feature-settings: "smcp";
+  -webkit-font-feature-settings: "smcp";
+  -o-font-feature-settings: "smcp";
+  font-feature-settings: "smcp";
+}
+
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
