@@ -50,6 +50,7 @@ input:focus, input:active, button:focus, button:active {
 }
 
 /* ============= HELPERS ================= */
+
 .inline {
   display: inline;
 }
@@ -63,7 +64,6 @@ input:focus, input:active, button:focus, button:active {
   border:inherit;
 }
 
-
 .hcenter {
   margin: 0 auto;
   width: 100%;
@@ -75,6 +75,7 @@ input:focus, input:active, button:focus, button:active {
 
 .sc {
   -moz-font-feature-settings: "smcp=1";
+  -moz-font-feature-settings: "smcp";
   -ms-font-feature-settings: "smcp";
   -webkit-font-feature-settings: "smcp";
   -o-font-feature-settings: "smcp";
@@ -93,4 +94,31 @@ input:focus, input:active, button:focus, button:active {
 
 .cf {
     *zoom: 1;
+}
+
+
+
+/* ============ PRINT STYLEs =============== */
+
+@media print{
+  body {
+    background: #fff;
+    color: #000;
+  }
+
+  p a:after {
+    content: " (" attr(href) ")";
+    font-size: 80%;
+  }
+
+
+  header nav, footer {
+    display: none;
+  }
+
+  @page {
+    margin: 0.5cm;
+  }
+
+
 }
